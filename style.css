@@ -3,6 +3,11 @@ font-family: Arial;
 margin:0;
 background:#f3f1fa;
 }
+.profile-img{
+width:200px;
+border-radius:15px;
+margin-top:10px;
+}
 
 /* Header */
 header{
