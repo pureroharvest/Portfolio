@@ -1,32 +1,62 @@
 body{
-font-family: Arial;
+font-family:Arial;
 margin:0;
-background:#f3f1fa;
+background:linear-gradient(135deg,#0f9b8e,#1e90ff);
+color:#1b1b1b;
 }
+
+/* Header */
+header{
+background:linear-gradient(90deg,#0f9b8e,#1e90ff);
+color:white;
+padding:20px;
+text-align:center;
+}
+
+/* About Layout */
+.about-section{
+display:flex;
+align-items:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.about-image{
+width:50%;
+}
+
+.about-text{
+width:50%;
+}
+
+.about-image img{
+width:100%;
+max-width:450px;
+border-radius:12px;
+box-shadow:0px 5px 20px rgba(0,0,0,0.15);
+}
+
+/* Profile */
 .profile-img{
 width:200px;
 border-radius:15px;
 margin-top:10px;
 }
 
-/* Header */
-header{
-background:#6a0dad;
-color:white;
-padding:20px;
-text-align:center;
-}
+/* Interest Images */
 .interest-img{
 width:250px;
 margin:10px;
 border-radius:12px;
 transition:0.3s;
+box-shadow:0px 4px 15px rgba(0,0,0,0.1);
 }
 
 .interest-img:hover{
-transform:scale(1.1);
+transform:scale(1.08);
 }
 
+/* Navigation */
 nav a{
 color:white;
 margin:10px;
@@ -36,7 +66,7 @@ transition:0.3s;
 }
 
 nav a:hover{
-color:#ffd700;
+color:#a7ffeb;
 }
 
 /* Sections */
@@ -48,14 +78,14 @@ text-align:center;
 .card{
 background:white;
 margin:20px;
-padding:20px;
-border-radius:10px;
-box-shadow:0px 4px 15px rgba(0,0,0,0.1);
+padding:25px;
+border-radius:15px;
+box-shadow:0px 5px 20px rgba(0,0,0,0.1);
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-10px);
+transform:translateY(-8px);
 }
 
 /* Animations */
@@ -101,8 +131,24 @@ from{width:0}
 to{width:100%}
 }
 
+/* Footer */
 footer{
 text-align:center;
 padding:15px;
-background:#ddd;
+background:#0f9b8e;
+color:white;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+.about-section{
+flex-direction:column;
+}
+
+.about-text,
+.about-image{
+width:100%;
+}
+
 }
